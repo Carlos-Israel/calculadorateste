@@ -1,3 +1,6 @@
 def divisao(A, B):
-    divisao = A / B
-    return divisao
+    if B == 0:
+        raise ValueError("Divisão por zero não é permitida.")
+    else:
+        divisao = A / B
+        return divisao
