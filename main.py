@@ -8,7 +8,7 @@ def main():
     print("faça sua operação")
     A = float(input("Digite o primeiro número: "))
     B = float(input("Digite o segundo número: "))
-    operacao = input("Digite a operação (+, -, *, /): ")
+    operacao = input("Digite a operação (+, -, *, /, **): ")
     if operacao == "+":
         resultado = soma.soma(A, B)
     elif operacao == "-":
