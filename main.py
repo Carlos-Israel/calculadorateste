@@ -2,6 +2,7 @@ import soma
 import subtracao
 import multiplicacao
 import divisao
+import potenciacao
 
 def main():
     print("faça sua operação")
@@ -16,6 +17,8 @@ def main():
         resultado = multiplicacao.multiplicacao(A, B)
     elif operacao == "/":
         resultado = divisao.divisao(A, B)
+    elif operacao == "**":
+        resultado = potenciacao.potenciacao(A, B)
     else:
         print("Operação inválida.")
         return 
