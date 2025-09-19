@@ -1,5 +1,23 @@
-def main():
-    print("the main function is running")
+import soma
+import subtracao
+import multiplicacao
+import divisao
 
+def main():
+    print("faça sua operação")
+    A = float(input("Digite o primeiro número: "))
+    B = float(input("Digite o segundo número: "))
+    operacao = input("Digite a operação (+, -, *, /): ")
+    if operacao == "+":
+        resultado = soma.soma(A, B)
+    elif operacao == "-":
+        resultado = subtracao.subtracao(A, B)
+    elif operacao == "*":
+        resultado = multiplicacao.multiplicacao(A, B)
+    elif operacao == "/":
+        resultado = divisao.divisao(A, B)
+    else:
+        print("Operação inválida.")
+        return
 if __name__ == "__main__":
     main()  
