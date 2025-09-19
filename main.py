@@ -18,6 +18,7 @@ def main():
         resultado = divisao.divisao(A, B)
     else:
         print("Operação inválida.")
-        return
+        return 
+    print(f"O resultado é: {resultado}")
 if __name__ == "__main__":
     main()  
